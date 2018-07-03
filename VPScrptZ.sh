@@ -5,8 +5,7 @@
 # 
 # ==================================================
 
-MYIP=$(wget -qO- ipv4.icanhazip.com);
-: '
+MYIP=$(wget -qO- ipv4.icanhazip.com)
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive

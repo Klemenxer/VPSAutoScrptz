@@ -7,9 +7,9 @@
 
 data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
 
-echo "-----------------------" | lolcat;
-echo "Checking Dropbear login" | lolcat;
-echo "-----------------------" | lolcat;
+echo "-----------------------"
+echo "Checking Dropbear login"
+echo "-----------------------"
 
 for PID in "${data[@]}"
 do
@@ -26,9 +26,9 @@ echo "";
 
 data=( `ps aux | grep "\[priv\]" | sort -k 72 | awk '{print $2}'`);
 
-echo "----------------------" | lolcat;
-echo "Checking OpenSSH login" | lolcat;
-echo "----------------------" | lolcat;
+echo "----------------------"
+echo "Checking OpenSSH login"
+echo "----------------------"
 
 for PID in "${data[@]}"
 do
@@ -43,13 +43,13 @@ done
 
 echo "";
 
-echo "------------------------------------------------" | lolcat
-echo " Multi Login = kill " | lolcat
-echo " Cara pakai : kill nomor PID " | lolcat
-echo "------------------------------------------------" | lolcat
+echo "------------------------------------------------"
+echo " Multi Login = kill "
+echo " Cara pakai : kill nomor PID "
+echo "------------------------------------------------"
 
 echo "";
 
-echo "Mod by shigeno";
+echo "";
 
 echo "";

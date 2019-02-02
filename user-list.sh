@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "-------------------------------" | lolcat
-echo "USERNAME          EXP DATE     " | lolcat
-echo "-------------------------------" | lolcat
+echo "-------------------------------"
+echo "USERNAME          EXP DATE     "
+echo "-------------------------------"
 while read expired
 do
         AKUN="$(echo $expired | cut -d: -f1)"
@@ -12,8 +12,8 @@ do
         fi
 done < /etc/passwd
 JUMLAH="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
-echo "-------------------------------" | lolcat
+echo "-------------------------------"
 echo "Account number: $JUMLAH user"
-echo "-------------------------------" | lolcat
-echo -e "Mod by shigeno"
+echo "-------------------------------"
+echo -e ""
 echo -e ""
